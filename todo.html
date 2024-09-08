@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="flex-main">
+            <div class="main-box">
+                <h1>To-Do App</h1>
+                <div class="insert">
+                    <input type="text" id="text-id" placeholder="Add a task!">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="add-items">
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    let input=document.getElementById("text-id");
+    let container=document.getElementById("add-items");
+    function addTask()
+    {
+        if(input.value==='')
+    {
+        alert("Please enter a task");
+    }
+    else{
+        let li=document.createElement("li");
+        li.innerHTML=input.value;
+        container.appendChild(li);
+        let span=document.createElement("span");
+        span.innerHTML="X";
+        li.appendChild(span);
+    }
+    input.value='';
+    }
+    document.addEventListener("click", function(x){
+        if(x.target.tagName=="LI")
+    {
+        x.target.classList.toggle("checked");
+    }
+    else if(x.target.tagName=="SPAN")
+    {
+        x.target.parentElement.remove();
+    }
+    }, false)
+</script>
+</html>
