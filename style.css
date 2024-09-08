@@ -148,15 +148,21 @@ img.sailor{
 }
 .sailor{
   background-color: rgb(156, 248, 185);
-  display:inline-block;
+  /* display:inline-block; */
   border-radius:40px;
   cursor:pointer;
+  width:200px;
+  position:relative;
+  left:40px;
 }
 .fisherman{
   background-color: rgb(156, 248, 185);
-  display:inline-block;
+  /* display:inline-block; */
   border-radius:40px;
   cursor:pointer;
+  width:200px;
+  position:relative;
+  left:40px;
 }
 .select .sailor p{
   margin:20px;
@@ -167,16 +173,16 @@ img.sailor{
   font-size:25px;
 }
 #sailor-desc{
-  font-size:23px;
-  margin-top:25px;
-  position:absolute;
-  left:210px;
-  color:black;
+  margin-top:15px;
 }
 #fisherman-desc{
-  font-size:23px;
-  margin-top:25px;
-  position:absolute;
-  right:210px;
-  color:black;
+  margin-top:15px;
+}
+.flex-sailor{
+  display:inline-flex;
+  flex-direction:column;
+}
+.flex-fisherman{
+  display:inline-flex;
+  flex-direction:column;
 }
