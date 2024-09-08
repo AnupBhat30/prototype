@@ -172,12 +172,14 @@ img.sailor{
   margin:20px;
   font-size:25px;
 }
-#sailor-desc{
-  margin-top:15px;
-}
-#fisherman-desc{
-  margin-top:15px;
-}
+ #sailor-desc{
+  
+  margin-top:10px;
+
+} 
+ #fisherman-desc{
+  margin-top:10px;
+} 
 .flex-sailor{
   display:inline-flex;
   flex-direction:column;

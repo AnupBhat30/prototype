@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+  body{
+    background:rgb(85, 149, 198);
+    height:100vh;
+    width:100%;
+  }
+  .background h1{
+    text-align:center;
+    color:white;
+    font-size:50px;
+    margin-top:20px;
+  }
+  .background h3{
+    text-decoration: underline;
+    margin-left:30px;
+    margin-top:20px;
+    color:white;
+    font-size:30px;
+  }
+  .info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info p{
+    color:white;
+    font-size:25px;
+    margin-right:50px;
+  }
+  .caused{
+    display: flex;
+    justify-content: center;
+  }
+  .cause-info{
+    color:white;
+    font-size:25px;
+    margin:20px 20px auto 20px;
+  }
+  .flex-causes{
+    display: flex;
+    justify-content: space-around;
+  }
+  .stats{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  button{
+    text-align:center;
+    font-size:30px;
+    color:white;
+    background-color: rgb(5, 5, 110);
+    padding:10px;
+    margin-top:30px;
+    border:none;
+    outline:none;
+    border-radius:30px;
+    margin-left:45%;
+  }

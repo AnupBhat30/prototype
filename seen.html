@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SeaSense</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>My Page Title</title>
+    <link rel="stylesheet" type="text/css" href="seen.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,19 +13,29 @@
     />
   </head>
   <body>
-    <section>
-      <div class="items">
-        <h1>SeaSense</h1>
-        <p>Explore, Learn and protect our oceans</p>
-        <button id="navigate" onclick="window.location.href='choose.html'">
-          Start Your Adventure
-        </button>
+    <div id="container">
+      <div class="tsunami-event">
+        <h1>Event 1: Tsunami Alert</h1>
+      </div>
+      <div class="scenario">
+        <h1>
+          Scenario: You are a sailor enjoying a peaceful day at sea.</br>  Suddenly,
+          your navigation system issues a TSUNAMI alert.
+        </h1>
+      </div>
+      <div class="continue">
+        <h3 onclick="window.location.href='tsunami.html'">Click to continue...</h3>
       </div>
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
       <div class="wave wave3"></div>
       <div class="wave wave4"></div>
+      <div class="sun"></div>
+      <div class="boat"></div>
+    </div>
+
+    <section>
+     
     </section>
   </body>
-  <script src="./index.js"></script>
 </html>
