@@ -162,7 +162,7 @@ h1 {
         top: 45%; /* Adjust this value to keep the boat higher above water */
     }
 }
-
+/*hi*/
 @keyframes hideElements {
     0% {
       opacity: 1;
