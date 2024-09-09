@@ -14,28 +14,66 @@
   </head>
   <body>
     <div id="container">
-      <div class="tsunami-event">
-        <h1>Event 1: Tsunami Alert</h1>
-      </div>
-      <div class="scenario">
-        <h1>
-          Scenario: You are a sailor enjoying a peaceful day at sea.</br>  Suddenly,
-          your navigation system issues a TSUNAMI alert.
-        </h1>
-      </div>
-      <div class="continue">
-        <h3 onclick="window.location.href='tsunami.html'">Click to continue...</h3>
+      <!-- Added id="title" here -->
+      <h1 id="title">Tsunami Alert: What will you do?</h1>
+      <div class="options">
+        <div class="option1" id="option1">
+          <img
+            src="./assets/images/option1.png"
+            alt="option1"
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="option2">
+          <img
+            src="./assets/images/option2.png"
+            alt="option2"
+            height="200px"
+            width="200px"
+          />
+        </div>
+        <div class="option3">
+          <img
+            src="./assets/images/option3.png"
+            alt="option3"
+            height="200px"
+            width="200px"
+          />
+        </div>
       </div>
       <div class="wave wave1"></div>
       <div class="wave wave2"></div>
       <div class="wave wave3"></div>
       <div class="wave wave4"></div>
       <div class="sun"></div>
-      <div class="boat"></div>
+      <div class="boat" id="boat"></div>
+      <div class="island" id="island"></div>
     </div>
 
-    <section>
-     
-    </section>
+    <section></section>
+
+    <!-- JavaScript for boat movement -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const option1 = document.getElementById("option1");
+        const title = document.getElementById("title");
+        const options = document.querySelector(".options");
+        const boat = document.getElementById("boat");
+        const island = document.getElementById("island");
+
+        option1.addEventListener("click", () => {
+          // Hide the title and options using the fade-out animation
+          title.style.animation = "hideElements 2s forwards";
+          options.style.animation = "hideElements 2s forwards";
+
+          // Display the island immediately after clicking the option
+          island.style.display = "block";
+
+          // Move the boat towards the island
+          boat.style.animation = "moveToIsland 5s linear forwards";
+        });
+      });
+    </script>
   </body>
 </html>
